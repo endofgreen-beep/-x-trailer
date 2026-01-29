@@ -28,7 +28,7 @@ export const Contact: React.FC = () => {
             className="absolute inset-0 w-full h-full bg-cover bg-no-repeat bg-scroll md:bg-fixed opacity-40"
             style={{
               backgroundImage: "url('https://iili.io/fri1D1p.jpg')",
-              backgroundPosition: "center 65%"
+              backgroundPosition: "center 35%"
             }}
         ></div>
         <div className="absolute inset-0 bg-black/60"></div>
@@ -74,12 +74,12 @@ export const Contact: React.FC = () => {
                 </div>
                 <h3 className="text-sm font-bold text-gray-400 mb-2 uppercase tracking-widest">ВКонтакте</h3>
                 <a
-                    href="https://vk.com/xtrailer"
+                    href="https://vk.com/krasiviepricepy"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-xl font-semibold text-white hover:text-gray-300 transition-colors"
                 >
-                    vk.com/xtrailer
+                    vk.com/krasiviepricepy
                 </a>
             </FadeIn>
 
