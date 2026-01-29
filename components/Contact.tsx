@@ -73,13 +73,13 @@ export const Contact: React.FC = () => {
                     <VkIcon size={32} />
                 </div>
                 <h3 className="text-sm font-bold text-gray-400 mb-2 uppercase tracking-widest">ВКонтакте</h3>
-                <a 
-                    href="https://vk.com/krasiviepricepy" 
-                    target="_blank" 
+                <a
+                    href="https://vk.com/xtrailer"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-xl font-semibold text-white hover:text-gray-300 transition-colors"
                 >
-                    vk.com/krasiviepricepy
+                    vk.com/xtrailer
                 </a>
             </FadeIn>
 
