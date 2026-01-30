@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-accent py-12">
+    <footer className="bg-gradient-to-b from-black to-gray-500 md:bg-none md:bg-accent py-12">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-2xl font-bold tracking-tighter text-white">
