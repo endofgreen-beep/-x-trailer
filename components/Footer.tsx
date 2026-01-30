@@ -2,8 +2,10 @@ import React from 'react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-gradient-to-b from-black to-gray-500 md:bg-none md:bg-accent py-12">
-      <div className="max-w-7xl mx-auto px-6">
+    <footer className="relative py-12 overflow-hidden">
+      {/* Mobile: gradient, Desktop: solid accent */}
+      <div className="absolute inset-0 bg-black md:bg-accent"></div>
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-2xl font-bold tracking-tighter text-white">
             X-TRAILER
