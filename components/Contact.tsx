@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Phone, Mail, Send } from 'lucide-react';
 import { FadeIn } from './FadeIn';
 
@@ -17,36 +17,11 @@ const VkIcon = ({ size = 24, className = "" }: { size?: number, className?: stri
 );
 
 export const Contact: React.FC = () => {
-  const sectionRef = useRef<HTMLElement>(null);
-  const bgRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const section = sectionRef.current;
-      const bg = bgRef.current;
-      if (!section || !bg) return;
-
-      const rect = section.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      if (rect.top < windowHeight && rect.bottom > 0) {
-        const progress = (windowHeight - rect.top) / (windowHeight + rect.height);
-        const offset = (progress - 0.5) * 80;
-        bg.style.transform = `translateY(${offset}px)`;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <section ref={sectionRef} id="contact" className="relative py-24 bg-gray-900 overflow-hidden">
+    <section id="contact" className="relative py-24 bg-gray-900 overflow-hidden">
       <div className="absolute inset-0 z-0">
          <div
-            ref={bgRef}
-            className="absolute -inset-y-20 inset-x-0 w-full bg-cover bg-no-repeat bg-center opacity-40 will-change-transform"
+            className="absolute inset-0 w-full h-full bg-cover bg-no-repeat bg-scroll md:bg-fixed opacity-40"
             style={{
               backgroundImage: "url('https://iili.io/fri1D1p.jpg')",
               backgroundPosition: "center 35%"
